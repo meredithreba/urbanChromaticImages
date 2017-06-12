@@ -64,17 +64,7 @@ polys.df <- SpatialPolygonsDataFrame(polys, data.frame(id=ID, row.names=ID))
 #writeOGR(polys.df, '.', 'citySquares', driver='ESRI Shapefile')
 writeOGR(polys.df, '.', 'finalCities', driver='ESRI Shapefile')
 
-##### does the same thing inefficiently with a loop but good to look at to understand what is going on if upper code is too confusing
-# #this is the inefficient way of doing this - using a for loop
-# #initialize the list
-# a <- vector('list', length(2))
-# 
-# #loop through each centroid value and create a polygon
-# for (i in 1:nrow(centroids)) {	   
-#   a[[i]]<-Polygons(list(Polygon(matrix(square[i, ], ncol=2, byrow=TRUE))), ID[i]) 
-# }
-# 
-# polys<-SpatialPolygons(a,proj4string = CRS(as.character("+proj=utm +zone=11 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0")))
+
 
 #################################################################################################
 ### Export Shapefile to KML
