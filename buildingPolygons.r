@@ -20,6 +20,7 @@ setwd('H:/urbanChromatic')
 #####################################################################################################
 ### Building Polygons from Centroids
 #####################################################################################################
+## original code from: http://neondataskills.org/working-with-field-data/Field-Data-Polygons-From-Centroids
 
 # Make sure character strings don't import as factors
 options(stringsAsFactors=FALSE)
