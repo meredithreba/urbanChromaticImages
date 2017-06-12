@@ -43,8 +43,7 @@ xMinus = centroids$longitude-radius
 #Extract the plot ID information. NOTE: because we set
 #stringsAsFactor to false above, we can import the plot 
 #ID's using the code below. If we didn't do that, our ID's would 
-#come in as factors by default. 
-#We'd thus have to use the code ID=as.character(centroids$Plot_ID) 
+#come in as factors by default and have to use the code ID=as.character(centroids$Plot_ID) 
 ID=centroids$Plot_ID
 
 #calculate polygon coordinates for each plot centroid. 
